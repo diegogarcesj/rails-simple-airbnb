@@ -1,0 +1,93 @@
+<div class="jumbotron jumbotron-fluid">
+<%= image_tag(@flat.picture_url, height: '360', width:'100%', class: 'fit-cover') %>
+</div>
+
+<div class="container margin-top-negative">
+
+<div class="row">
+
+<div class="col-8">
+
+<div class="card mb-3">
+  <div class="card-body card-header">
+    <h1><%= @flat.name %></h1>
+    <p><%= @flat.address %></p>
+  </div>
+</div>
+
+<div class="card mb-3">
+<div class="card-body card-header">
+    <h3>A bit more about this flat...</h3>
+    <p><%= @flat.description %></p>
+  </div>
+</div>
+
+<div class="card mb-5">
+<div class="card-body card-header">
+    <h3>Details</h3>
+    <div class="d-flex">
+      <div class="">
+        <%= icon('fas', 'user-friends', class: 'mr-3') %>
+        <span> <%= @flat.number_of_guests %></span>
+      </div>
+      <div class="px-3">
+        <%= icon('fas', 'dollar-sign', class: 'mr-3') %>
+        <span> <%= @flat.price_per_night %> </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div class="col-4">
+
+<div class="card mb-3">
+  <div class="card-body card-header">
+    <h5>Book this place!</h5>
+    <form>
+      <div class="form-group">
+        <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">From:</div>
+        </div>
+        <input type="text" class="form-control" id="from_date" placeholder="12/10/2017">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">To:</div>
+        </div>
+        <input type="text" class="form-control" id="to_date" placeholder="18/10/2017">
+      </div>
+      </div>
+      <button type="submit" class="btn btn-success col-12">Book</button>
+    </form>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="card-body card-header d-flex justify-content-between align-items-center">
+    <span>Share</span>
+    <div>
+    <%= icon('fab', 'facebook-square', class: 'fa-2x') %>
+    <%= icon('fab', 'twitter-square', class: 'fa-2x') %>
+    <%= icon('fab', 'pinterest-square', class: 'fa-2x') %>
+    <%= icon('fas', 'envelope-square', class: 'fa-2x') %>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>

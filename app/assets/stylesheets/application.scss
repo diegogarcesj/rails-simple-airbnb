@@ -2,3 +2,11 @@
 @import "bootstrap/scss/bootstrap"; // from the node_modules
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+.fit-cover {
+  object-fit: cover;
+}
+
+.margin-top-negative {
+  margin-top: -60px;
+}
