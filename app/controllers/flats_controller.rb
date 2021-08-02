@@ -31,6 +31,9 @@ class FlatsController < ApplicationController
   end
 
   def destroy
+    @flat.destroy
+
+    redirect_to flats_path
   end
 
   private
