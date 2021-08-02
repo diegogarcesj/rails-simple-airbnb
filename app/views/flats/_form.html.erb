@@ -1,0 +1,18 @@
+<div class="row justify-content-center">
+  <div class="col-6 bg-light rounded">
+
+    <h1><%= @flat.new_record? ? 'Add a new Flat' : 'Edit flat' %></h1>
+    <%= simple_form_for @flat do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :picture_url %>
+    <%= f.input :description %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :price_per_night %>
+    <%= f.submit @flat.new_record? ? 'Create Flat' : 'Edit flat', class: 'btn btn-primary mt-3' %>
+    <%= f.button :button, 'Cancel', type: :reset, class: 'btn btn-danger mt-3' %>
+
+    <% end %>
+
+  </div>
+</div>
