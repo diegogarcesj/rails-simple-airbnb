@@ -10,7 +10,7 @@
 <% @flats.each do |flat| %>
   <div class="col-4">
     <div class="card mb-3">
-      <%= image_tag(flat.picture_url, class: 'card-img-top') %>
+      <%= image_tag(flat.picture_url, height: '240', class: 'card-img-top') %>
       <div class="card-body card-header">
         <h5 class="card-title"><%= flat.name %></h5>
         <p class="card-text"><%= flat.address %></p>
